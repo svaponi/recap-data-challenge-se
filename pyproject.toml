@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "recap-data-challenge-se"
+version = "0.1.0"
+description = ""
+authors = ["svaponi <10941963+svaponi@users.noreply.github.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+python-dateutil = "^2.9.0.post0"
+pydantic = "^2.9.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
