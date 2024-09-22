@@ -1,0 +1,309 @@
+{
+  "status_code": 200,
+  "body": {
+    "data": [
+      {
+        "original_billing_amount": 13566.0,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "c0cf58c4ac8339430add263faa1114cb73cd93f83d9634469c1af46560804093",
+        "invoice_date": "2021-08-18"
+      },
+      {
+        "original_billing_amount": 593.81,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "3bbff841797c56e5ecefb6bf3ce7586d4d303e2cae1c186426318826412aa761",
+        "invoice_date": "2021-08-01"
+      },
+      {
+        "original_billing_amount": 593.81,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "97efc6c6bf629bce1b607580cfe7c4acfd6b73d409faa31f0c61f86a0d53f235",
+        "invoice_date": "2021-05-01"
+      },
+      {
+        "original_billing_amount": 593.81,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "8885778dc2b87286f81e1da1f585a5f78294a09acc8d575030b17c37ee98cd96",
+        "invoice_date": "2021-04-01"
+      },
+      {
+        "original_billing_amount": 593.81,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "dd10da5fc3b0294dc47b4a1fbf2e378741003859221665b3507d277d9c986314",
+        "invoice_date": "2021-03-01"
+      },
+      {
+        "original_billing_amount": 593.81,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "df8f80cf01888358172bc38e61137af4c16e251819f9bc0b0a2b9a0e2222c06c",
+        "invoice_date": "2021-01-01"
+      },
+      {
+        "original_billing_amount": 0.0,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "f34239ebe3c964bff32e3df1c93a7605e053a3123089bb0cb421a40a1451c761",
+        "invoice_date": "2020-12-15"
+      },
+      {
+        "original_billing_amount": 578.84,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "7637d4cf86813d42f58cf2b7cd4581c301181a0a2d23409ed8abf67dfa256268",
+        "invoice_date": "2020-12-01"
+      },
+      {
+        "original_billing_amount": 578.84,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "3ec5f41f498506161127982ffd5408b53227f87736894d1372e215040bfcbcf3",
+        "invoice_date": "2020-11-01"
+      },
+      {
+        "original_billing_amount": 578.84,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "15e7e9bf166d918a9fd39dc0e34d8b715fe1f88e159eadb029ba0dca572801c8",
+        "invoice_date": "2020-10-01"
+      },
+      {
+        "original_billing_amount": 578.84,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "06f37cbcc3f9eebad270041c46063d4b7c2b528f783150ba27bd4c0bf8a3b3e9",
+        "invoice_date": "2020-09-01"
+      },
+      {
+        "original_billing_amount": 578.84,
+        "contract_id": "059ef3e0ba2b7f3ed0f963b898e521382f6db192060b6b37b417b10eaa7696af",
+        "invoice_id": "b22ce7fe77a112f1300c521670ab83e2d36635c7cd9076970b5624790b404a81",
+        "invoice_date": "2020-08-01"
+      },
+      {
+        "original_billing_amount": 649.6,
+        "contract_id": "060c0d24a45a36cc3ce20c0f32514bf2e019919515c3da8fc16dfb3284371173",
+        "invoice_id": "a0978438511c72af22d36c9d52b499ca1a3cff0a21df22c8d74375345961b846",
+        "invoice_date": "2020-12-01"
+      },
+      {
+        "original_billing_amount": 649.6,
+        "contract_id": "060c0d24a45a36cc3ce20c0f32514bf2e019919515c3da8fc16dfb3284371173",
+        "invoice_id": "ad3825c93129e233bdb6e052f6510815198a5e6f5e021897d2d152e25aa8d650",
+        "invoice_date": "2020-11-01"
+      },
+      {
+        "original_billing_amount": 649.6,
+        "contract_id": "060c0d24a45a36cc3ce20c0f32514bf2e019919515c3da8fc16dfb3284371173",
+        "invoice_id": "339ad2de5f2fd1ca91bec807870f109bab43b901a89f0fa162e28df52806c693",
+        "invoice_date": "2020-10-01"
+      },
+      {
+        "original_billing_amount": 649.6,
+        "contract_id": "060c0d24a45a36cc3ce20c0f32514bf2e019919515c3da8fc16dfb3284371173",
+        "invoice_id": "91e7b5644ac793f7329c0286c4dfda7e6fdde9e0011dc7424398db7fd10a5d26",
+        "invoice_date": "2020-09-01"
+      },
+      {
+        "original_billing_amount": 649.6,
+        "contract_id": "060c0d24a45a36cc3ce20c0f32514bf2e019919515c3da8fc16dfb3284371173",
+        "invoice_id": "6262691d99834bf8ad17103084f29590906a52037c90ac840bd456ec917d5f5e",
+        "invoice_date": "2020-08-01"
+      },
+      {
+        "original_billing_amount": 314.16,
+        "contract_id": "060c980385995de12aa0a19544b18880062279469c58e56370e672f30d452e6d",
+        "invoice_id": "39d787fe2ec427931088dfeb69a64c77069f9fd34871ee47b0ab859dedae5c4f",
+        "invoice_date": "2021-08-15"
+      },
+      {
+        "original_billing_amount": 235.62,
+        "contract_id": "060c980385995de12aa0a19544b18880062279469c58e56370e672f30d452e6d",
+        "invoice_id": "3da17757169cf579315aaf6b710c9bfa5071b40f1e617b447316f3182051692d",
+        "invoice_date": "2021-06-01"
+      },
+      {
+        "original_billing_amount": -314.16,
+        "contract_id": "060c980385995de12aa0a19544b18880062279469c58e56370e672f30d452e6d",
+        "invoice_id": "eef3cac44e02719390b369919bfc16c2691c66392d225b93000ac139629ae167",
+        "invoice_date": "2021-02-15"
+      },
+      {
+        "original_billing_amount": 309.59,
+        "contract_id": "060c980385995de12aa0a19544b18880062279469c58e56370e672f30d452e6d",
+        "invoice_id": "12b069f93104ea62372fdaf8e730661dc0bb19d39c52badc88e7390325876ca0",
+        "invoice_date": "2020-11-15"
+      },
+      {
+        "original_billing_amount": 306.24,
+        "contract_id": "060c980385995de12aa0a19544b18880062279469c58e56370e672f30d452e6d",
+        "invoice_id": "51a538c55401e1e850e9d6bcbe8391565ccc76959787efbc39230cbd3f43c1c4",
+        "invoice_date": "2020-08-15"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "f6101746aa9c48be8d21e9211425389dd1e07032eec49efb3f4a2b369b38039a",
+        "invoice_date": "2021-09-01"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "06c74cfe9e12924874a2dac265d7e15948289246ac4581027127bc9e10d75816",
+        "invoice_date": "2021-08-01"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "a67cb30fef038ece801c09c86111f674f182374207c2cf4b272c5668c86ed275",
+        "invoice_date": "2021-07-01"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "9f41a10997ec06c17d25a09a48348b89386686386160b1d739e380018f112c82",
+        "invoice_date": "2021-06-01"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "ce9f1dbd85630e4895ab1e863bd9b70603d803652a7ed008bc45bc5355602bb9",
+        "invoice_date": "2021-05-01"
+      },
+      {
+        "original_billing_amount": 207.66,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "42f0a623d37b2cd472658812407f41a0284f369f72de0c26c0fc1da26cece34e",
+        "invoice_date": "2021-04-22"
+      },
+      {
+        "original_billing_amount": 207.66,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "1bf5842029bd93210f69d416e20850e2103e630fdf473e95e5af6ec701605391",
+        "invoice_date": "2021-04-01"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "9ce4c17bc5e123a7a7d2f3d4c7631e8b90b4c4b08bc4926f95487eef846aa594",
+        "invoice_date": "2021-03-01"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "dd7f61ffc5fd8b386d288fa14102324bf4f0200db3f6fdb842c8d5f17ae36fd5",
+        "invoice_date": "2021-02-01"
+      },
+      {
+        "original_billing_amount": 415.31,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "919c6b2bd449100e47ee7dc1dfbf1d65957e2141138ccd1684670895ec51c70d",
+        "invoice_date": "2021-01-01"
+      },
+      {
+        "original_billing_amount": 404.84,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "c14b0acfadf50bc7e0eb3338074e9ce0d40285f4e320256dc475e0180250b235",
+        "invoice_date": "2020-12-01"
+      },
+      {
+        "original_billing_amount": 404.84,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "a3410a5f07d1a05a54192f6fce784a1ef7e17d7437a3ecb8672963ea5a2fcc33",
+        "invoice_date": "2020-11-01"
+      },
+      {
+        "original_billing_amount": 208.95,
+        "contract_id": "0631b917b77d42d26c9553c136c9ffbbbf1546b3dbfe62591b9784773445f9f1",
+        "invoice_id": "614cf19ca69dd625180d2b5ee7e1df978726799f3415e753044597026efbaf19",
+        "invoice_date": "2020-10-20"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "1373a4ed7ef553479dfb07ab652de1bc65b46ed60172ca570279c28f64ee7c6d",
+        "invoice_date": "2021-09-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "465564d0524cd3691fdbb47e114f3f53ab40eade36d3ddb6fc5c10f75647a3da",
+        "invoice_date": "2021-08-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "28e3f51ae1bc952b48bbf747b6419930c3445f925e39f4a8ba7e66ff8c7c369e",
+        "invoice_date": "2021-07-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "11fdd50bee99efc7e6f02ed2420e5485ddb9b4bacc1060e79f865aac6c6d0946",
+        "invoice_date": "2021-06-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "dedd296775738ecfa862d6ccaa65d4f64c581f4792c03d8d55dbe8cc9fac441b",
+        "invoice_date": "2021-05-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "fadb76f68254f6dcf7f8582c826aabf2d810665ca114a0db22809bc270edbb17",
+        "invoice_date": "2021-04-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "2c0abdd64850b69460b268ee3ce2436412c8eb7ef5a6ee0f917c3146eed87be7",
+        "invoice_date": "2021-03-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "3b2674319baaa6b529f8c33130494cb97b7cbb94a084cfda973442f4be7334c6",
+        "invoice_date": "2021-02-01"
+      },
+      {
+        "original_billing_amount": 450.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "28174985aef97bc4ad90ce015d3b20aa8f6d26b0d241c439df075d8f03fb059f",
+        "invoice_date": "2021-01-01"
+      },
+      {
+        "original_billing_amount": 174.19,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "31d7261e8438855258f4130c244dfaad399702bc98f2e13aa1977957c5633001",
+        "invoice_date": "2020-12-01"
+      },
+      {
+        "original_billing_amount": 0.0,
+        "contract_id": "063afa4fa05640f71bc203655ff84bc81146cd03da566b32e1e32d866e5e6db7",
+        "invoice_id": "d7b9f8adf2f8d3c1dc5c313567bcba2fcf890f693eb393eca2e72199760499ad",
+        "invoice_date": "2020-11-23"
+      },
+      {
+        "original_billing_amount": 593.81,
+        "contract_id": "06ea9a5a1d49892414c8f51914fd20174b613f4932757577b27f0d87235a0c3a",
+        "invoice_id": "737cc607be0f70f6333659bfdbc285f926fe18db28619086235a57de2669a25e",
+        "invoice_date": "2021-09-01"
+      },
+      {
+        "original_billing_amount": 440.57,
+        "contract_id": "06ea9a5a1d49892414c8f51914fd20174b613f4932757577b27f0d87235a0c3a",
+        "invoice_id": "8fb29c8edc36b4540c8b46735f45c1742deed0fa56968caa7ec40a0246f0c602",
+        "invoice_date": "2021-08-01"
+      },
+      {
+        "original_billing_amount": 0.0,
+        "contract_id": "06ea9a5a1d49892414c8f51914fd20174b613f4932757577b27f0d87235a0c3a",
+        "invoice_id": "fca4e0b7694ea93948944ff72f87b998af13a3e95e03b70fca338067ecccc84f",
+        "invoice_date": "2021-07-12"
+      },
+      {
+        "original_billing_amount": 178.5,
+        "contract_id": "0740a894ce491999d0807ce315468035baf42f76d7f5daefbc4df987982e0506",
+        "invoice_id": "806f2add7c1f01fba14f90524aef83c609dfc1d1bb07d10315e7256b1265c090",
+        "invoice_date": "2021-09-01"
+      }
+    ],
+    "total_pages": 10,
+    "page": 6
+  }
+}
