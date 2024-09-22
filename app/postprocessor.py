@@ -15,14 +15,14 @@ def previous_month(year_month: YearMonth) -> YearMonth:
 def postprocess(data: list[PostprocessorIn]) -> list[PostprocessorOut]:
     client_ids = set()
     year_months = set()
-    amounts: dict[tuple[YearMonth, str], float] = defaultdict(float)
+    amounts: dict[tuple[YearMonth, bytes], float] = defaultdict(float)
 
     for year_month, contract_id, amount in data:
         amounts[(year_month, contract_id)] = amount
         client_ids.add(contract_id)
         year_months.add(year_month)
 
-    results = []
+    results: list[PostprocessorOut] = []
 
     # here we loop over all possible year_months, from min to max
     min_year_month = min(year_months)
@@ -43,6 +43,6 @@ def postprocess(data: list[PostprocessorIn]) -> list[PostprocessorOut]:
             if amount == 0 and churned_ == 0:
                 # ignore if both amount and churned_ are 0
                 continue
-            results.append((year_month, contract_id, amount, churned_))
+            results.append((year_month, contract_id.hex(), amount, churned_))
 
     return results
