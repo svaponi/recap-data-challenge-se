@@ -14,21 +14,30 @@ def run_threads(max_workers):
     from app.processor import process
 
     client = APIClient(_ENDPOINT_DATA, f"run_threads_{str(max_workers).zfill(2)}")
-    results = process(client, max_workers=max_workers)
-    return results
+    return process(client, max_workers=max_workers)
+
+
+def run_async(max_workers):
+    from app.api_client_async import APIClientAsync
+    from app.processor_async import process
+
+    client = APIClientAsync(_ENDPOINT_DATA, f"run_async_{str(max_workers).zfill(2)}")
+    return asyncio.run(process(client, max_workers=max_workers))
 
 
 if __name__ == "__main__":
     # check if server is running
     urlopen(_ENDPOINT_STATS, timeout=10)
 
+    run_funcs = [run_threads, run_async]
     concurrency = [4, 8, 16, 32, 64]
-    for max_workers in concurrency:
-        start = time.perf_counter()
-        results = run_threads(max_workers=max_workers)
-        end = time.perf_counter()
-        elapsed = end - start
-        print(f"{max_workers=} {elapsed=} {len(results)=}")
+    for run_func in run_funcs:
+        for max_workers in concurrency:
+            start = time.perf_counter()
+            results = run_func(max_workers=max_workers)
+            end = time.perf_counter()
+            elapsed = end - start
+            print(f"{run_func.__name__} {max_workers=} {elapsed=} {len(results)=}")
 
     r: HTTPResponse = urlopen(_ENDPOINT_STATS, timeout=1)
     data = json.loads(r.read())
