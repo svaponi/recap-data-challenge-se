@@ -1,14 +1,48 @@
+import asyncio
 import collections
+import contextlib
 import json
-import multiprocessing
 import os
 import time
 
-import flask
+import aiofiles
+import cachetools
+import fastapi
 
-app = flask.Flask(__name__)
+
+@contextlib.asynccontextmanager
+async def lifespan(*args):
+    # warm up on startup
+    for i in range(10):
+        await _get_page(i)
+    print("ready to serve")
+    yield
+
+
+app = fastapi.FastAPI(lifespan=lifespan)
 _collector = collections.defaultdict(list)
-_lock = multiprocessing.Lock()
+_lock = asyncio.Lock()
+_cur_dir = os.path.dirname(__file__)
+
+_NO_OF_PAGES = 1_000
+_CACHE = cachetools.LRUCache(maxsize=_NO_OF_PAGES)
+
+
+async def _get_page(page) -> dict:
+    if page in _CACHE:
+        return _CACHE[page]
+    path = os.path.join(_cur_dir, f"testdata", f"page{page}.json")
+    if os.path.exists(path):
+        async with aiofiles.open(path, "r") as f:
+            contents = await f.read()
+        data = json.loads(contents)
+        data["body"]["total_pages"] = _NO_OF_PAGES
+        _CACHE[page] = data
+        return data
+    return {
+        "status_code": 200,
+        "body": {"data": [], "total_pages": _NO_OF_PAGES, "page": page},
+    }
 
 
 @app.get("/stats")
@@ -23,30 +57,25 @@ def get_stats():
     return resp
 
 
-_NO_OF_PAGES = 1_000
-
-
 @app.get("/invoices")
-def get_invoices():
-    trace_id = flask.request.args.get("trace_id")
+async def get_invoices(
+    page: int = fastapi.Query(1),
+    trace_id: str = fastapi.Query(None),
+):
     if trace_id:
-        with _lock:
+        async with _lock:
             _collector[trace_id].append(time.time())
-    page = flask.request.args.get("page", 1)
-    page = int(page)
+
     if 10 < page <= _NO_OF_PAGES:
-        page = (page - 1) % 10 + 1
-    path = os.path.join(os.path.dirname(__file__), f"testdata", f"page{page}.json")
-    if os.path.exists(path):
-        with open(path, "r") as f:
-            data = json.load(f)
-            data["body"]["total_pages"] = _NO_OF_PAGES
-            return data, 200, {"content-type": "application/json"}
-    return {
-        "status_code": 200,
-        "body": {"data": [], "total_pages": _NO_OF_PAGES, "page": page},
-    }
+        page_in_range = (page - 1) % 10 + 1
+    else:
+        page_in_range = page
+    data = await _get_page(page_in_range)
+    data["body"]["page"] = page
+    return data
 
 
 if __name__ == "__main__":
-    app.run(port=8007)
+    import uvicorn
+
+    uvicorn.run("server:app", port=8007)
