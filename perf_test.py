@@ -4,6 +4,8 @@ import time
 from http.client import HTTPResponse
 from urllib.request import urlopen
 
+import psutil
+
 _SERVER = "http://127.0.0.1:8007"
 _ENDPOINT_DATA = f"{_SERVER}/invoices"
 _ENDPOINT_STATS = f"{_SERVER}/stats"
@@ -29,7 +31,10 @@ if __name__ == "__main__":
     # check if server is running
     urlopen(_ENDPOINT_STATS, timeout=10)
 
-    run_funcs = [run_threads, run_async]
+    process = psutil.Process()
+    print(f"{process.pid=}")
+
+    run_funcs = [run_async, run_threads]
     concurrency = [4, 8, 16, 32, 64]
     for run_func in run_funcs:
         for max_workers in concurrency:
@@ -37,7 +42,11 @@ if __name__ == "__main__":
             results = run_func(max_workers=max_workers)
             end = time.perf_counter()
             elapsed = end - start
-            print(f"{run_func.__name__} {max_workers=} {elapsed=} {len(results)=}")
+            rss = round(process.memory_info().rss / 1024**2, 3)
+            cpu_percent = process.cpu_percent()
+            print(
+                f"{run_func.__name__} {max_workers=} {elapsed=} {len(results)=} {rss=}MB {cpu_percent=}%"
+            )
 
     r: HTTPResponse = urlopen(_ENDPOINT_STATS, timeout=1)
     data = json.loads(r.read())
