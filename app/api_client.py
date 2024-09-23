@@ -1,4 +1,6 @@
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 from app.api_model import ApiResponse, InvoiceItem
 
@@ -9,6 +11,12 @@ class APIClient:
         assert "?" not in endpoint_url, "invalid endpoint_url"
         self.endpoint_url = endpoint_url
         self.trace_id = trace_id
+        session = requests.Session()
+        retry = Retry(connect=3, backoff_factor=0.5)
+        adapter = HTTPAdapter(max_retries=retry)
+        session.mount("http://", adapter)
+        session.mount("https://", adapter)
+        self.session = session
 
     def fetch_page(self, page) -> tuple[list[InvoiceItem], int]:
         assert page > 0, "Page must be a positive integer"
@@ -17,7 +25,7 @@ class APIClient:
         if self.trace_id:
             params["trace_id"] = self.trace_id
 
-        response = requests.get(self.endpoint_url, params=params)
+        response = self.session.get(self.endpoint_url, params=params)
 
         if response.status_code == 404:
             return [], False
